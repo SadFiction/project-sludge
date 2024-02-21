@@ -4,5 +4,6 @@ This project will attempt to use some sort of cellular automata to replicate neu
 
 
 Dependendencies:
-- bevy
+- godot
+-- gdext
 - rust

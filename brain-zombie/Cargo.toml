@@ -1,9 +1,12 @@
 [package]
-name = "project-sludge-engine"
+name = "brain-zombie"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
-bevy = "0.13"
+godot = {git = "https://github.com/godot-rust/gdext", branch = "master"}
