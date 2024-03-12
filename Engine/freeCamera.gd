@@ -7,8 +7,16 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _process(_delta):
+	var input_direction = Input.get_vector("Left", "Right", "Forward", "Back")
+	var direction = (transform.basis * Vector3(input_direction.x, 0, input_direction.y)).normalized()
+
+	if direction:
+		position.x += direction.x  * 0.1
+		position.z += direction.z * 0.1
+
+	
+
 func _input(event):
 	if event is InputEventMouseMotion:
 		var rot_x = event.relative.y * 0.2

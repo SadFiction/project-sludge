@@ -11,4 +11,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.774026, 0)
 script = ExtResource("1_yqpu0")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(6.57024, 0, 0, 0, 1, 0, 0, 0, 4.22361, -0.0325114, 0, 0)
 mesh = SubResource("PlaneMesh_n8tj6")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.0116062, 0.999933, 0, -0.999933, 0.0116062, 0, 3.69283, 0)
+light_energy = 8.972
+light_indirect_energy = 3.833
+light_volumetric_fog_energy = 6.44
+spot_angle = 8.88237
